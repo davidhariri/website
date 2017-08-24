@@ -1,0 +1,8 @@
+<div class="note">
+    <div class="note__text">
+        {{ note.html|safe }}
+    </div>
+    <div class="note__date">
+        <time datetime="{{ note.created }}">{{ note.created }}</time>
+    </div>
+</div>

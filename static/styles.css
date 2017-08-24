@@ -29,15 +29,15 @@ a {
   padding: 0 16px;
   margin: 0 auto; }
 
-.post__text p {
+.note__text p {
   margin-bottom: 16px; }
-  .post__text p:last-child {
+  .note__text p:last-child {
     margin-bottom: 0px; }
-.post__text img, .post__text video {
+.note__text img, .note__text video {
   width: 100%;
   display: block;
   margin: 8px 0; }
-.post__date {
+.note__date {
   margin-top: 7px;
   font-size: 13px;
   color: #CDCDD0; }
