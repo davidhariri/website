@@ -1,19 +1,8 @@
 <div class="post">
     <div class="post__text">
-        {{ post.text.html|safe }}
+        {{ post.html|safe }}
     </div>
-    {% if post.media|length > 0 %}
-        <div class="post__media">
-            {% for m in post.media %}
-                {% if m.kind == "image" %}
-                    <img src="{{m.url}}"/>
-                {% elif m.kind == "video" %}
-                    <video src="{{m.url}}"/>
-                {% endif %}
-            {% endfor %}
-        </div>
-    {% endif %}
     <div class="post__date">
-        <time datetime="{{ post.created.utc }}">{{ post.created.friendly }}</time> – {{ post.location.friendly }}
+        <time datetime="{{ post.created }}">{{ post.created }}</time>
     </div>
 </div>
