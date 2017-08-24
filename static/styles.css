@@ -33,19 +33,10 @@ a {
   margin-bottom: 16px; }
   .post__text p:last-child {
     margin-bottom: 0px; }
-.post__media {
-  margin-top: 8px;
-  height: 280px;
+.post__text img, .post__text video {
   width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap; }
-  .post__media img, .post__media video {
-    height: 100%;
-    display: inline-block;
-    margin-right: 4px; }
-    .post__media img:last-child, .post__media video:last-child {
-      margin-right: 0; }
+  display: block;
+  margin: 8px 0; }
 .post__date {
   margin-top: 7px;
   font-size: 13px;
