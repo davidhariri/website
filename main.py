@@ -12,8 +12,8 @@ def render_home():
         {
             "id": 1,
             "text": {
-                "html": "<p>I'm currently working on a new version of my site. It's going to be <i>great</i> when it's finished. Until then, you can follow along <a href=\"https://github.com/davidhariri/website/\">on Github</a> or talk to me <a href=\"https://twitter.com/davehariri/\">on Twitter</a>.</p>",
-                "md": "I'm currently working on a new version of my site. It's going to be *great* when it's finished. Until then, you can follow along [on Github](https://github.com/davidhariri/website) or talk to me [on Twitter](https://twitter.com/davehariri/)."
+                "html": "<p>I'm currently working on a new version of my site. Follow along <a href=\"https://github.com/davidhariri/website/\">on Github</a> or talk to me <a href=\"https://twitter.com/davehariri/\">on Twitter</a>.</p>",
+                "md": "I'm currently working on a new version of my site. Follow along [on Github](https://github.com/davidhariri/website) or talk to me [on Twitter](https://twitter.com/davehariri/)."
             },
             "media": [],
             "location": {
