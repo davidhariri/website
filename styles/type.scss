@@ -2,44 +2,16 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
-h1 {
-    font-weight: 800;
-    font-size: $g * 6;
-    line-height: $g * 7;
-    margin-top: $g * 3;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: $g * 4;
-    line-height: $g * 5;
-    margin-top: $g * 2;
-}
-
-h3 {
-    font-weight: 500;
-    font-size: $g * 3;
-    line-height: $g * 4;
-    margin-top: $g * 2;
-}
-
-h4 {
-    font-weight: 600;
-    font-size: $g * 1.75;
-    line-height: $g * 3;
-    text-transform: uppercase;
-    letter-spacing: $g / 6;
-    margin-bottom: $g * 2;
-    margin-top: $g * 2;
-}
-
 p {
-    font-size: $g * 2.25;
-    line-height: $g * 3;
-    margin-top: $g * 2;
+    font-size: 19px;
+    line-height: 24px;
 }
 
 a {
-    color: $color-text;
-    text-decoration: underline;
+    color: $color-link;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
