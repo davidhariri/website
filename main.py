@@ -2,6 +2,7 @@ from flask import (
     Flask,
     render_template
 )
+import os
 
 app = Flask(__name__)
 
@@ -35,3 +36,8 @@ def render_home():
     ]
 
     return render_template("views/home.html", **locals())
+
+
+@app.route("/.well-known/acme-challenge/5wvUisl4hWbXhaQ1RvAQDI7hBBJicIlR13pc4MxeQFE")
+def return_secret():
+    return os.getenv("LE_CHALLENGE", "Bonk")
