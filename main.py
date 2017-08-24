@@ -15,7 +15,14 @@ def render_home():
                 "html": "<p>I'm currently working on a new version of my site. Follow along <a href=\"https://github.com/davidhariri/website/\">on Github</a> or talk to me <a href=\"https://twitter.com/davehariri/\">on Twitter</a>.</p>",
                 "md": "I'm currently working on a new version of my site. Follow along [on Github](https://github.com/davidhariri/website) or talk to me [on Twitter](https://twitter.com/davehariri/)."
             },
-            "media": [],
+            "media": [
+                {
+                    "type": "image/png",
+                    "kind": "image",
+                    "url": "https://ada.imgix.net/images/57487a7c-ba75-4ebf-abe8-fe5c14ee9f06.png",
+                    "size": [1536, 2048]
+                }
+            ],
             "location": {
                 "coordinates": [43.64920, -79.39720],
                 "friendly": "Toronto",
