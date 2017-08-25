@@ -2,10 +2,11 @@
     <div class="note__text">
         {{ note.html|safe }}
     </div>
-    <div class="note__date">
+    <div class="note__info">
         <time datetime="{{ note.created }}">{{ note.created }}</time>
         {% if note.location_friendly %}
              — <a href="http://maps.apple.com/?ll={{ note.location[0] }},{{ note.location[1] }}">{{ note.location_friendly }}</a>
         {% endif %}
+        <a href="/notes/{{ note.slug }}" class="right">Link</a>
     </div>
 </div>
