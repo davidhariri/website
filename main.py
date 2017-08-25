@@ -13,9 +13,9 @@ API_ROOT = "https://dhariri-api.herokuapp.com"
 @app.route("/")
 def render_home():
     # FIXME: Temporary while I dial in the features
-    response = requests.get("{}/notes/nWsMjv3/".format(API_ROOT)).json()
+    notes_resp = requests.get("{}/notes/".format(API_ROOT))
 
-    return render_template("views/home.html", notes=[response])
+    return render_template("views/home.html", notes=notes_resp.json()["notes"])
 
 
 @app.route("/notes/<note_id>/")
