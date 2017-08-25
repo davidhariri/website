@@ -19,5 +19,9 @@
         margin-top: 7px;        
         font-size: 13px;
         color: $color-unimportant;
+
+        a {
+            color: inherit;
+        }
     }
 }

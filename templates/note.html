@@ -4,5 +4,8 @@
     </div>
     <div class="note__date">
         <time datetime="{{ note.created }}">{{ note.created }}</time>
+        {% if note.location_friendly %}
+             — <a href="http://maps.apple.com/?ll={{ note.location[0] }},{{ note.location[1] }}">{{ note.location_friendly }}</a>
+        {% endif %}
     </div>
 </div>
