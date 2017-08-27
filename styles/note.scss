@@ -17,6 +17,16 @@
             }
         }
 
+        pre {
+            overflow-x: scroll;
+            background-color: #F6F6F8;
+            padding: 16px 8px;
+        }
+
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+
         img, video {
             width: 100%;
             display: block;
