@@ -1,6 +1,12 @@
 .note {
     margin-bottom: $g * 8;
 
+    @media screen and (min-width : 320px) and (max-width: 414px) {
+        height: 100vh;
+        margin-bottom: 0;
+        padding-top: $g * 8;
+    }
+
     &__text {
         p {
             margin-bottom: 16px;
