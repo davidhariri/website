@@ -1,9 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="content">
-        {% for note in notes %}
-            {% include "note.html" %}
-        {% endfor %}
-    </div>
+    {% for note in notes %}
+        {% include "note.html" %}
+    {% endfor %}
 {% endblock %}

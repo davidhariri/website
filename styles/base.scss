@@ -21,7 +21,6 @@ body {
     background: $color-bg;
     color: $color-text;
     font-size: $g * 2;
-    padding: ($g * 9) 0;
     margin: 0;
     line-height: $g * 2;
     overflow-x: hidden;
@@ -29,7 +28,6 @@ body {
 
     @media screen and (min-width : 320px) and (max-width: 414px) {
         position: absolute;
-        padding: 0 0;
         top: 0;
         left: 0;
         right: 0;
@@ -38,6 +36,5 @@ body {
         -webkit-overflow-scrolling: touch;
         overflow-scrolling: touch;
         -webkit-scroll-snap-type: mandatory;
-        -webkit-scroll-snap-points-y: repeat(100%);
     }
 }

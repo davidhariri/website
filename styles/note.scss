@@ -1,10 +1,11 @@
 .note {
-    margin-bottom: $g * 8;
+    min-height: 320px;
+    padding: $g * 10 16px;
+    max-width: $g * 60;
+    margin: 0 auto;
 
     @media screen and (min-width : 320px) and (max-width: 414px) {
-        height: 100vh;
-        margin-bottom: 0;
-        padding-top: $g * 8;
+        -webkit-scroll-snap-coordinate: 0% 0%;
     }
 
     &__text {
