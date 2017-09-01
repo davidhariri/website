@@ -5,12 +5,22 @@ from flask import (
 )
 import requests
 
+from ago import human
+from datetime import datetime
+
 app = Flask(__name__)
 
 API_ROOT = "https://dhariri-api.herokuapp.com"
 
 
+@app.template_filter("ago")
+def render_date_ago(timestamp):
+    d = datetime.fromtimestamp(timestamp)
+    return human(d, 1)
+
+
 @app.route("/")
+@app.route("/notes/")
 def render_home():
     # FIXME: Temporary while I dial in the features
     notes_resp = requests.get("{}/notes/".format(API_ROOT))
