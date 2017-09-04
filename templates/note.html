@@ -7,6 +7,8 @@
         {% if note.location_friendly %}
              — <a href="http://maps.apple.com/?ll={{ note.location[0] }},{{ note.location[1] }}">{{ note.location_friendly }}</a>
         {% endif %}
-        <a href="/notes/{{ note.slug }}" class="right">Link</a>
+        {% if not single %}
+            <a href="/notes/{{ note.slug }}" class="right">Link</a>
+        {% endif %}
     </div>
 </div>

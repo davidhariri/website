@@ -37,4 +37,4 @@ def render_note(note_id):
     if note_resp.status_code != 200:
         abort(404)
 
-    return render_template("views/note.html", note=note_resp.json())
+    return render_template("views/note.html", note=note_resp.json(), single=True)
