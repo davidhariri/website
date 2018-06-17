@@ -1,4 +1,4 @@
 Makefile
 .env
-.sass_cache
+.sass-cache
 __pycache__
