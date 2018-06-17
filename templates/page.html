@@ -1,13 +1,27 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
+    {% if page.title != "Home" %}
+    <title>David Hariri — {{ page.title }}</title>
+    {% else %}
+    <title>David Hariri</title>
+    {% endif %}
+    <meta property="og:site_name" content="David Hariri" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:url" content="https://dhariri.com/" />
+    <meta property="og:image" content="{{ page.preview_picture.url() }}" />
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="page hidden">
         {% for section in page.sections %}
-        <section>Hi</section>
+        <section class="grid">
+            <div class="col col-2">{{ section.label }}</div>
+            <div class="col col-4">
+                {{ section.content | markdown }}
+            </div>
+        </section>
         {% endfor %}
     </div>
     <script src="/static/page.js"></script>

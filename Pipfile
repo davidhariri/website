@@ -4,10 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
+Flask = "*"
 contentful = "*"
-markdown = "*"
+Markdown = "*"
 python-dotenv = "*"
+gunicorn = "*"
+flask-markdown = "*"
 
 [dev-packages]
 
