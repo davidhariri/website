@@ -1,0 +1,4 @@
+Makefile
+.env
+.sass_cache
+__pycache__

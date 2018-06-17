@@ -1,3 +1,4 @@
+// Fade in animation
 const pageElements = document.getElementsByClassName('page');
 
 if (pageElements.length > 0) {
