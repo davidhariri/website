@@ -17,9 +17,9 @@ def page_home():
     return render_template("page.html", **locals())
 
 
-@app.route("/ada-tests/")
-def page_ada_tests():
-    return render_template("ada-tests.html")
+@app.route("/tests/<template>")
+def page_ada_tests(template):
+    return render_template("tests/" + template)
 
 
 @app.errorhandler(404)
